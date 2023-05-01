@@ -15,20 +15,13 @@ public class CSVOps extends FilesFormat{
         return null;
     }
 
-   public boolean saveTxt(String filename, StringBuilder text) {
-
+   public void saveTxt(String filename, StringBuilder text) {
         try (FileWriter writer = new FileWriter(filename, true)) {
-//            for (Note data : book.getAllnotes()) {
-//                String line = String.join(";", text);
                 writer.write(text + "\n");
-//            }
-
             writer.flush();
-            System.out.println("Сохранено в CSV файл");
-            return true;
+            System.out.println("Сохранено в файл " + filename);
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
-        return false;
     }
 }

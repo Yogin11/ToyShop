@@ -9,7 +9,7 @@ public class Model {
         this.csv = new CSVOps();
     }
 
-    public void addProductModel() {
+    public void addWarehouseData() {
         for (Object pr : js.Loading("try2.json")) {
             System.out.println();
             if (pr instanceof Product) {
@@ -22,8 +22,9 @@ public class Model {
     public void saveJson() {
         js.Saving("try2.json", sklad);
     }
+
     public void saveCSV(StringBuilder str) {
-       csv.saveTxt("prizeitems.csv", str );
+        csv.saveTxt("prizeitems.csv", str);
     }
 
 

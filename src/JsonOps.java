@@ -11,7 +11,6 @@ public class JsonOps extends FilesFormat{
 
     @Override
     public <T> ArrayList<T> Loading(String filename) {
-//    public  ArrayList<Product> Loading(String filename) {
         Gson gson = new Gson();
             try (JsonReader reader = new JsonReader(new InputStreamReader(new FileInputStream(filename ), StandardCharsets.UTF_8))){
             ArrayList<T> productsArr = new ArrayList<>();
@@ -23,19 +22,14 @@ public class JsonOps extends FilesFormat{
             return (ArrayList<T>) productsArr ;
         } catch (IOException e) {
             System.out.println("Ошибка ввода файла ");
-            // System.out.println("Parsing error");
         }
         return null;
-
     }
 
     @Override
     public void Saving(String filename, Warehouse<Product> storage) {
         Gson GSON = new GsonBuilder().setPrettyPrinting().create();
         String json = GSON.toJson(storage.getStorage());
-
-//        String json = GSON.toJson(storage.getStock());
-
         try (PrintWriter out = new PrintWriter(
                 new OutputStreamWriter(new FileOutputStream(filename, false), StandardCharsets.UTF_8))) {
             out.write(json);

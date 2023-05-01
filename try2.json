@@ -3,9 +3,9 @@
     "productType": "Игрушки",
     "productName": "Мишка",
     "brand": "SoyuzSoft",
-    "lottFrequency": 1,
+    "lottFrequency": 3,
     "productCategory": "Мягкие игрушки",
-    "volume": 1007
+    "volume": 20
   },
   {
     "productType": "Игрушки",
@@ -38,5 +38,13 @@
     "lottFrequency": 10,
     "productCategory": "",
     "volume": 10
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "Настольная игра \u0027монополия\u0027",
+    "brand": "",
+    "lottFrequency": 5,
+    "productCategory": "",
+    "volume": 2
   }
 ]

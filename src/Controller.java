@@ -5,16 +5,14 @@ import java.util.Map;
 
 
 public class Controller {
-    Menu menu;
+    MenuToy menu;
     Model model;
     ArrayList<Product> prizelist;
-//    ArrayList<Product> alllist;
 
     public Controller() {
-        menu = new Menu();
+        menu = new MenuToy();
         model = new Model();
-        model.addProductModel();
-//        alllist = new ArrayList<>();
+        model.addWarehouseData();
         prizelist = new ArrayList<>();
 
     }
@@ -45,14 +43,27 @@ public class Controller {
             case "7":
                 emptyPrizeList();
                 break;
+            case "8":
+                loadWarehouseData();
+                break;
+            case "9":
+                emptyWarehouseData();
+                break;
+
         }
         selectMenu("0");
 
     }
 
     public void showAll() {
-        System.out.println(model.sklad);
+        menu.showLists(model.sklad.getStorage());
+//        System.out.println(model.sklad);
     }
+
+    public void loadWarehouseData() {
+        model.addWarehouseData();
+    }
+
 
     public void AddProductCtrl() {
         String name = menu.newToyEntryDialog("1").toLowerCase();
@@ -104,11 +115,11 @@ public class Controller {
             for (Map.Entry<Product, Double> line : map.entrySet()) {
                 map.put(line.getKey(), line.getValue() / sumVolWeight);
             }
-            for (Product pr : model.sklad.getStorage()) {
-                int amountEachProduct = (int) Math.round(number * map.get(pr));
+            for (Product product : model.sklad.getStorage()) {
+                int eachProductVolume = (int) Math.round(number * map.get(product));
                 int count = 0;
-                while (count < amountEachProduct) {
-                    prizelist.add(pr);
+                while (count < eachProductVolume && count<product.getVolume()) {
+                    prizelist.add(product);
                     count++;
                 }
             }
@@ -137,6 +148,12 @@ public class Controller {
             Product item = prizelist.get(0);
             StringBuilder str = new StringBuilder();
             prizelist.remove(0);
+            for (Product pr : model.sklad.getStorage()) {
+                if (pr.equals(item)){
+                    pr.setVolume(pr.getVolume()-1);             // Уменьшаем количество на складе
+                    break;
+                }
+            }
             str.append(item.toString()).append("\n");
             System.out.println("Выбираем и сохраняем в список в файл: ");
             System.out.println(str);
@@ -149,5 +166,11 @@ public class Controller {
     public void emptyPrizeList() {
         prizelist.clear();
         menu.confirmMessage();
+    }
+
+    public void emptyWarehouseData() {
+        model.sklad.getStorage().clear();
+        menu.confirmMessage();
+
     }
 }
