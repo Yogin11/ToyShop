@@ -1,0 +1,42 @@
+[
+  {
+    "productType": "Игрушки",
+    "productName": "Мишка",
+    "brand": "SoyuzSoft",
+    "lottFrequency": 1,
+    "productCategory": "Мягкие игрушки",
+    "volume": 1007
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "Бульдошка",
+    "brand": "ООО \u0027Мягкая игрушка\u0027",
+    "lottFrequency": 15,
+    "productCategory": "Мягкие игрушки",
+    "volume": 5
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "Желтая Kitty",
+    "brand": "Kitty",
+    "lottFrequency": 50,
+    "productCategory": "Куклы",
+    "volume": 3
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "Lego Set #1",
+    "brand": "Lego",
+    "lottFrequency": 10,
+    "productCategory": "",
+    "volume": 8
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "Вертолет",
+    "brand": "",
+    "lottFrequency": 10,
+    "productCategory": "",
+    "volume": 10
+  }
+]
