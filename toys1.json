@@ -17,11 +17,11 @@
   },
   {
     "productType": "Игрушки",
-    "productName": "Желтая Kitty",
-    "brand": "Kitty",
-    "lottFrequency": 50,
+    "productName": "кукла Мила",
+    "brand": "Весна",
+    "lottFrequency": 11,
     "productCategory": "Куклы",
-    "volume": 3
+    "volume": 10
   },
   {
     "productType": "Игрушки",
@@ -37,7 +37,7 @@
     "brand": "",
     "lottFrequency": 10,
     "productCategory": "",
-    "volume": 10
+    "volume": 12
   },
   {
     "productType": "Игрушки",
@@ -46,5 +46,13 @@
     "lottFrequency": 5,
     "productCategory": "",
     "volume": 2
+  },
+  {
+    "productType": "Игрушки",
+    "productName": "барабан",
+    "brand": "",
+    "lottFrequency": 12,
+    "productCategory": "",
+    "volume": 7
   }
 ]

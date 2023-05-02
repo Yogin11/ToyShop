@@ -10,13 +10,11 @@ public abstract class Warehouse<Product> {
     public void AddProduct(Product product) {
         storage.add(product);
     }
-
+    public void clearWarehouse() {
+        storage.clear();
+    }
     public ArrayList<Product> getStorage() {
         return storage;
-    }
-
-    public Integer totalProductAmount() {
-        return 0;
     }
 
     @Override

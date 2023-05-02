@@ -1,31 +1,17 @@
-public class Model {
-    Warehouse<Product> sklad;
+public abstract class Model {
+    String file;
     JsonOps js;
     CSVOps csv;
-
     public Model() {
-        this.sklad = new ToyDepot();
         this.js = new JsonOps();
         this.csv = new CSVOps();
+
     }
-
-    public void addWarehouseData() {
-        for (Object pr : js.Loading("try2.json")) {
-            System.out.println();
-            if (pr instanceof Product) {
-                sklad.AddProduct((Product) pr);
-            } else
-                System.out.println("Загрузка не удалась!");
-        }
+    enum mode {
+        add,
+        renew
     }
-
-    public void saveJson() {
-        js.Saving("try2.json", sklad);
-    }
-
-    public void saveCSV(StringBuilder str) {
-        csv.saveTxt("prizeitems.csv", str);
-    }
-
-
+    public abstract boolean addWarehouseData(String filename, mode mod);
+    public abstract void saveJson();
+    public abstract void saveCSV(StringBuilder str);
 }
