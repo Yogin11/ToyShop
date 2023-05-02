@@ -27,14 +27,14 @@ public class JsonOps extends FilesFormat{
     }
 
     @Override
-    public void Saving(String filename, Warehouse<Product> storage) {
+    public void Saving(String filename, Warehouse<Product> storage, boolean append) {
         Gson GSON = new GsonBuilder().setPrettyPrinting().create();
         String json = GSON.toJson(storage.getStorage());
         try (PrintWriter out = new PrintWriter(
-                new OutputStreamWriter(new FileOutputStream(filename, false), StandardCharsets.UTF_8))) {
+                new OutputStreamWriter(new FileOutputStream(filename, append), StandardCharsets.UTF_8))) {
             out.write(json);
             out.flush();
-            System.out.println("Записано ");
+            System.out.println("Записано в " + filename);
         } catch (Exception e) {
             e.printStackTrace();
         }

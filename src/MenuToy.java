@@ -19,7 +19,7 @@ public class MenuToy extends View {
         action.put("7", "Очистить список призовых игрушек.");
         action.put("8", "Загрузить данные со склада (из файла).");
         action.put("9", "Очистить данные со склада.");
-        action.put("10", "Сохранить все изменения в текущем файле.");
+        action.put("10", "Сохранить все изменения в файл.");
 
     }
 
@@ -82,5 +82,12 @@ public class MenuToy extends View {
         System.out.println(getSubmenu().get(choice));
         return getInput();
     }
-
+    public String saveDataDialog(String choice) {
+        if (choice.equals("1")) {
+            setSubmenu("1", "Введите название Json файла. По умолчанию данные сохранятся в текущий файл ");
+            setSubmenu("2", "Выберите вариант - 1-добавить к существующим в файле данным, 2- переписать файл данными ");
+        }
+        System.out.println(getSubmenu().get(choice));
+        return getInput();
+    }
 }

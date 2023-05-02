@@ -12,6 +12,6 @@ public abstract class Model {
         renew
     }
     public abstract boolean addWarehouseData(String filename, mode mod);
-    public abstract void saveJson();
+    public abstract void saveJson(String filename, boolean append);
     public abstract void saveCSV(StringBuilder str);
 }

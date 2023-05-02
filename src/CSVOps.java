@@ -7,7 +7,7 @@ public class CSVOps extends FilesFormat{
     }
 
     @Override
-    public void Saving(String filename, Warehouse<Product> depot) {
+    public void Saving(String filename, Warehouse<Product> depot, boolean append) {
     }
 
     @Override

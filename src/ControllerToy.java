@@ -51,8 +51,7 @@ public class ControllerToy extends Controller {
                 emptyWarehouseData();
                 break;
             case "10":
-                model.saveJson();
-                menu.confirmMessage();
+                saveWarehouseData();
                 break;
 
         }
@@ -65,6 +64,22 @@ public class ControllerToy extends Controller {
         } else {
             menu.unconfirmMessage();
         }
+    }
+
+    public void saveWarehouseData() {
+        String filename = menu.saveDataDialog("1");
+
+        if (!filename.contains(".json") && !filename.isEmpty()) {
+            filename = filename + ".json";
+        }
+        String updateselection = menu.saveDataDialog("2");
+        if (updateselection.equals("1")) {
+            model.saveJson(filename, true);
+
+        } else if (updateselection.equals("2")) {
+            model.saveJson(filename, false);
+        }
+
     }
 
     public void loadWarehouseData() {
@@ -103,7 +118,6 @@ public class ControllerToy extends Controller {
         if (!found) {
             model.sklad.AddProduct(new Toy("", name, "", frequency, "", num));
         }
-        model.saveJson();
     }
 
     public void changeFrequency() {
@@ -131,8 +145,7 @@ public class ControllerToy extends Controller {
             } else {
                 defineToy(number);
             }
-        }
-        catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             menu.unconfirmMessage();
         }
 

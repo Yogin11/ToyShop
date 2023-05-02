@@ -1,5 +1,5 @@
 public interface Saver {
 
-        void Saving (String filename, Warehouse<Product> depot);
+        void Saving (String filename, Warehouse<Product> depot, boolean append);
 
 }

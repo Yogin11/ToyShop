@@ -30,8 +30,11 @@ public class ModelToy extends Model {
         return loadstatus;
     }
 
-    public void saveJson() {
-        js.Saving(this.file, sklad);
+    public void saveJson(String filename, boolean append) {
+        if (filename.isEmpty()) {
+            filename = this.file;
+        }
+        js.Saving(filename, sklad, append);
     }
 
     public void saveCSV(StringBuilder str) {
