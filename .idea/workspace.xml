@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76ede91c-c10c-458a-8399-364ded8add68" name="Changes" comment="Hello">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GBIntermedJava2023.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.2-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/gson-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CSVOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Doll.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/FilesFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JsonOps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProdClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Saver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SoftToy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Toy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ToyDepot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Warehouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="76ede91c-c10c-458a-8399-364ded8add68" name="Changes" comment="Toy store ver.1.0 minor corrections">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2P8gGLGngqGxrvomBYTkW16uivs" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -55,8 +37,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/maka/GeekBrains/JavaOOP/GB_HWs_OOP_Java/GBIntermedJava2023/lib/gson-2.8.2.jar",
+    "last_opened_file_path": "/home/maka/GeekBrains/InterAttestation_Apr_May_2023/ItogJava/ГлобальныйвариантМагазаИгрушек",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.23059362",
     "project.structure.side.proportion": "0.09900987",
@@ -92,11 +75,68 @@
       <option name="project" value="LOCAL" />
       <updated>1682844250636</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="80% progress Toy store">
+      <created>1682957162225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682957162225</updated>
+    </task>
+    <task id="LOCAL-00003" summary="80% progress Toy store">
+      <created>1682957211301</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682957211301</updated>
+    </task>
+    <task id="LOCAL-00004" summary="95% progress Toy store">
+      <created>1682971563622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682971563622</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Toy store ver.1.0">
+      <created>1683060285207</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683060285207</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Toy store ver.1.0">
+      <created>1683063835185</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683063835185</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Toy store ver.1.0 minor corrections">
+      <created>1683064209119</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683064209119</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Hello" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello" />
+    <MESSAGE value="80% progress Toy store" />
+    <MESSAGE value="95% progress Toy store" />
+    <MESSAGE value="Toy store ver.1.0" />
+    <MESSAGE value="Toy store ver.1.0 minor corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Toy store ver.1.0 minor corrections" />
   </component>
 </project>
